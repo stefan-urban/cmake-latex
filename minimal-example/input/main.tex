@@ -1,0 +1,49 @@
+% !BIB TS-program = biber
+
+\documentclass[]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{biblatex}
+\addbibresource{main.bib}
+
+\usepackage{blindtext}
+
+
+\title{Article Title}
+\author{The Author}
+
+\begin{document}
+	
+	\maketitle
+	
+	\begin{abstract}
+		\blindtext
+	\end{abstract}
+
+
+    \clearpage
+	\section{Section A}
+	
+	Did you know about \cite{wilde}?
+	
+	\blindtext
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=5cm]{image.png}
+		\caption{Sample image}
+	\end{figure}
+
+	\blindtext
+	
+    
+	\clearpage
+	\printbibliography
+
+\end{document}

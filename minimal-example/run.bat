@@ -1,0 +1,1 @@
+docker run --rm -it -v %cd%/input:/input -v %cd%/output:/output stefanurban/cmake-latex
